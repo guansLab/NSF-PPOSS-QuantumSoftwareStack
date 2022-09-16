@@ -49,13 +49,12 @@ This project explores the feasibility of designing a full software stack for a c
 
 
 <img width="200" alt="mark-photo" src="https://user-images.githubusercontent.com/5705572/127750258-6646a6a7-ecb2-4b25-9e6a-2657bc1efbc1.jpg">
+![Mark profile](/NSF-PPOSS-QuantumSoftwareStack/docs/assets/shuai.png)
 
 **Mark Novotny (Mississippi State University)**: MSSTATE CO-PI
 
 [Mark Novotny](https://newton.ph.msstate.edu/~novotny/index.html) is a W. L. Giles Distinguished Professor at Mississippi State University, and an Elected Fellow of the American Association for the Advancement of Science and also American Physical Society for "original algorithm development and applications of computational statistical mechanics to equilibrium and non-equilibrium problems in condensed-matter physics and materials science.
 
-
-<img width="200" alt="shuai-photo" src="/NSF-PPOSS-QuantumSoftwareStack/docs/assets/shuai.png">
 
 ![Shuai profile](/NSF-PPOSS-QuantumSoftwareStack/docs/assets/shuai.png)
 **Shuai Xu (Case Western Reserve University)**: CWRU CO-PI
