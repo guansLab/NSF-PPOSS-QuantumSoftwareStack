@@ -22,7 +22,7 @@ This project explores the feasibility of designing a full software stack for a c
 
 ### Principal Investigators
 
-<img width="200" alt="vipin-photo" src="https://user-images.githubusercontent.com/5705572/95699426-3cd0a100-0bf9-11eb-9e61-fcaed9698b20.jpg">
+<img width="200" alt="vipin-photo" src="/NSF-PPOSS-QuantumSoftwareStack/docs/assets/vipin.jpeg">
 
 **Vipin Chaudhary (Case Western Reserve University)**: CWRU PI
 
@@ -30,11 +30,11 @@ This project explores the feasibility of designing a full software stack for a c
 
 **Samee Khan (Mississippi State University)**: MSSTATE PI
 
-<img width="200" alt="samee-photo" src="https://user-images.githubusercontent.com/5705572/127581061-a6be2a17-21e0-4798-a954-2982ee5229b2.jpeg">
+<img width="200" alt="samee-photo" src="/NSF-PPOSS-QuantumSoftwareStack/docs/assets/Samee.jpeg">
 
 [Samee Khan](https://my.ece.msstate.edu/faculty/skhan/) Samee U. Khan received a PhD in 2007 from the University of Texas. Currently, he is the James W. Bagley Chair Professor and Department Head of Electrical & Computer Engineering at the Mississippi State University (MSU). Before arriving at MSU, he was Cluster Lead (2016-2020) for Computer Systems Research at National Science Foundation and the Walter B. Booth Professor at North Dakota State University. His research interests include optimization, robustness, and security of computer systems. His work has appeared in over 400 publications. He is associate editor of IEEE Transactions on Cloud Computing and Journal of Parallel and Distributed Computing.
 
-<img width="200" alt="qiang-photo" src="https://user-images.githubusercontent.com/5705572/127750258-6646a6a7-ecb2-4b25-9e6a-2657bc1efbc1.jpg">
+<img width="200" alt="qiang-photo" src="/NSF-PPOSS-QuantumSoftwareStack/docs/assets/qiang.jpeg">
 
 **Qiang Guan (Kent State University)**: KENTSTATE PI
 
@@ -48,8 +48,7 @@ This project explores the feasibility of designing a full software stack for a c
 [Xiaosong Li](https://uwligroup.org/) began his career with UW in 2005, where he now is the Harry and Catherine Jaynne Boand Endowed Professor of Chemistry and Associate Chair of Chemistry. He received his PhD in theoretical chemistry from Wayne State University. His research interests include computational and theoretical studies of chemical processes, time-dependent electronic structure theory, molecular dynamics, and methods for excited-state calculations.
 
 
-<img width="200" alt="mark-photo" src="https://user-images.githubusercontent.com/5705572/127750258-6646a6a7-ecb2-4b25-9e6a-2657bc1efbc1.jpg">
-![Mark profile](/NSF-PPOSS-QuantumSoftwareStack/docs/assets/shuai.png)
+<img width="200" alt="mark-photo" src="/NSF-PPOSS-QuantumSoftwareStack/docs/assets/Mark.jpeg">
 
 **Mark Novotny (Mississippi State University)**: MSSTATE CO-PI
 
@@ -65,11 +64,11 @@ This project explores the feasibility of designing a full software stack for a c
 
 ### Collaborators
 
-<img width="200" alt="ang-photo" src="https://user-images.githubusercontent.com/5705572/178408357-b993df84-0109-4ab6-ab8d-b4200737f192.jpeg">
+#(<img width="200" alt="ang-photo" src="https://user-images.githubusercontent.com/5705572/178408357-b993df84-0109-4ab6-ab8d-b4200737f192.jpeg">)
 
 **Ang Li (Pacific Northwest National Lab)**: Quantum Simulator
 
-<img width="200" alt="bo-photo" src="https://user-images.githubusercontent.com/5705572/178408803-aab65eec-e0bd-42b1-80f1-c9923d6044ae.jpeg">
+# (<img width="200" alt="bo-photo" src="https://user-images.githubusercontent.com/5705572/178408803-aab65eec-e0bd-42b1-80f1-c9923d6044ae.jpeg">)
 
 **Bo Fang (Pacific Northwest National Lab)**: Quantum Simulator and Quantum Chemistry
 
@@ -77,11 +76,11 @@ This project explores the feasibility of designing a full software stack for a c
 
 ### Students
 
-<img width="200" alt="Betis-photo" src="https://user-images.githubusercontent.com/5705572/156077654-cb723709-8486-4eb5-b8c8-a9fe8bb34eed.jpg">
+#(<img width="200" alt="Betis-photo" src="https://user-images.githubusercontent.com/5705572/156077654-cb723709-8486-4eb5-b8c8-a9fe8bb34eed.jpg">)
 
 **Betis Baheri (Kent State University)**
 
-<img width="200" alt="suren-photo" src="https://user-images.githubusercontent.com/5705572/156077826-562dee5b-87e5-4319-802b-29e89eeff758.jpg">
+#(<img width="200" alt="suren-photo" src="https://user-images.githubusercontent.com/5705572/156077826-562dee5b-87e5-4319-802b-29e89eeff758.jpg">)
 
 **Priyabrata Senapati (Kent State University)**
 
