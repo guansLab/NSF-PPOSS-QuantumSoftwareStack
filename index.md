@@ -57,6 +57,7 @@ This project explores the feasibility of designing a full software stack for a c
 
 <img width="200" alt="shuai-photo" src="/NSF-PPOSS-QuantumSoftwareStack/docs/assets/shuai.png">
 
+![Shuai profile](/NSF-PPOSS-QuantumSoftwareStack/docs/assets/shuai.png)
 **Shuai Xu (Case Western Reserve University)**: CWRU CO-PI
 
 [Shuai Xu](https://engineering.case.edu/profiles/sxx214) is an assistant professor at Case Western Reserve University, Department of Computer and Data Sciences, his research interest lies in theoretical computer science, with a focus on designing efficient algorithms and Fourier analysis of Boolean functions. He is also interested in quantum computing. 
