@@ -2,7 +2,7 @@
 
 *Project Title*: PPoSS:Planning:Software Stack for Scalable Heterogeneous NISQ Cluster
 
-**PIs**: [Vipin Chaudhary](https://engineering.case.edu/profiles/vxc204)(CWRU), [Qiang Guan](http://www.guans.cs.kent.edu/)(KENTSTATE), [Samee Khan](https://my.ece.msstate.edu/faculty/skhan/)(MSSTATE), [Xiaosong Li](https://uwligroup.org/)(UW)
+**PIs**: [Vipin Chaudhary](https://engineering.case.edu/profiles/vxc204) (CWRU), [Qiang Guan](http://www.guans.cs.kent.edu/) (KENTSTATE), [Samee Khan](https://my.ece.msstate.edu/faculty/skhan/) (MSSTATE), [Xiaosong Li](https://uwligroup.org/) (UW)
 
 **Awards**: [2216923](https://www.nsf.gov/awardsearch/showAward?AWD_ID=2216923) (CWRU, $143K), [2217021](https://www.nsf.gov/awardsearch/showAward?AWD_ID=2217021) (KENTSTATE, $44K), [2216896](https://www.nsf.gov/awardsearch/showAward?AWD_ID=2216896) (MSSTATE, $34K), [2216519](https://www.nsf.gov/awardsearch/showAward?AWD_ID=2216519) (UW, $21K), 
 
@@ -77,7 +77,9 @@ This project explores the feasibility of designing a full software stack for a c
 
 **Priyabrata Senapati (Kent State University)**
 
-**Vinooth Kulkarni (Case Western Reserve Universi)** 
+**Vinooth Kulkarni (Case Western Reserve University)** 
+
+**Aaron Orenstein (Case Western Reserve University)**
 
 ## Publications
 - [**IOLTS '22**] Betis Baheri, Qiang Guan, Vipin Chaudhary. "Quantum Noise in the Flow of Time: A Temporal Study of the Noise in Quantum Computers." *The IEEE International Symposium on On-Line Testing and Robust System Design (IOLTS)*. 
