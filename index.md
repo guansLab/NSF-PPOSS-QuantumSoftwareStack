@@ -32,7 +32,7 @@ This project explores the feasibility of designing a full software stack for a c
 
 [Samee Khan](https://my.ece.msstate.edu/faculty/skhan/) Samee U. Khan received a PhD in 2007 from the University of Texas. Currently, he is the James W. Bagley Chair Professor and Department Head of Electrical & Computer Engineering at the Mississippi State University (MSU). Before arriving at MSU, he was Cluster Lead (2016-2020) for Computer Systems Research at National Science Foundation and the Walter B. Booth Professor at North Dakota State University. His research interests include optimization, robustness, and security of computer systems. His work has appeared in over 400 publications. He is associate editor of IEEE Transactions on Cloud Computing and Journal of Parallel and Distributed Computing.
 
-<img width="200" alt="qiang-photo" src="/NSF-PPOSS-QuantumSoftwareStack/docs/assets/qiang.jpeg">
+<img width="200" alt="qiang-photo" src="/NSF-PPOSS-QuantumSoftwareStack/docs/assets/Qiang.jpeg">
 
 **Qiang Guan (Kent State University)**: KENTSTATE PI
 
