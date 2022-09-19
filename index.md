@@ -64,11 +64,9 @@ This project explores the feasibility of designing a full software stack for a c
 
 ### Collaborators
 
-#(<img width="200" alt="ang-photo" src="https://user-images.githubusercontent.com/5705572/178408357-b993df84-0109-4ab6-ab8d-b4200737f192.jpeg">)
+
 
 **Ang Li (Pacific Northwest National Lab)**: Quantum Simulator
-
-# (<img width="200" alt="bo-photo" src="https://user-images.githubusercontent.com/5705572/178408803-aab65eec-e0bd-42b1-80f1-c9923d6044ae.jpeg">)
 
 **Bo Fang (Pacific Northwest National Lab)**: Quantum Simulator and Quantum Chemistry
 
@@ -76,11 +74,9 @@ This project explores the feasibility of designing a full software stack for a c
 
 ### Students
 
-#(<img width="200" alt="Betis-photo" src="https://user-images.githubusercontent.com/5705572/156077654-cb723709-8486-4eb5-b8c8-a9fe8bb34eed.jpg">)
 
 **Betis Baheri (Kent State University)**
 
-#(<img width="200" alt="suren-photo" src="https://user-images.githubusercontent.com/5705572/156077826-562dee5b-87e5-4319-802b-29e89eeff758.jpg">)
 
 **Priyabrata Senapati (Kent State University)**
 
