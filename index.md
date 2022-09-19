@@ -38,7 +38,7 @@ This project explores the feasibility of designing a full software stack for a c
 
 [Qiang Guan](http://www.guans.cs.kent.edu/) is an assistant professor in Department of Computer Science at Kent State University, Kent, Ohio. Dr. Qiang Guan is the director of GUANS Lab . He is also a guest scientist of Los Alamos National Laboratory. He was a scientist in Data Science at Scale Team, at Los Alamos National Laboratory. He was mentored by Dr. Nathan DeBardeleben, Sean Blanchard and Dr. James Ahrens. He was the technical lead of BEE (Build and Execution Environment) project at Los Alamos National Laboratory. He obtained the Ph.D. degree in Computer Science and Engineering from University of North Texas, Denton, Texas, in 2014. 
 
-<img width="200" alt="xiaosong-photo" src="https://user-images.githubusercontent.com/5705572/127750258-6646a6a7-ecb2-4b25-9e6a-2657bc1efbc1.jpg">
+<img width="200" alt="xiaosong-photo" src="/NSF-PPOSS-QuantumSoftwareStack/docs/assets/xiaosong.jpeg">
 
 
 **Xiaosong Li (Kent State University)**: UW PI
