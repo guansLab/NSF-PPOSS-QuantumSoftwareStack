@@ -75,8 +75,9 @@ This project explores the feasibility of designing a full software stack for a c
 
 **Betis Baheri (Kent State University)**
 
-
 **Priyabrata Senapati (Kent State University)**
+
+**Vinooth Kulkarni (Case Western Reserve Universi)** 
 
 ## Publications
 - [**IOLTS '22**] Betis Baheri, Qiang Guan, Vipin Chaudhary. "Quantum Noise in the Flow of Time: A Temporal Study of the Noise in Quantum Computers." *The IEEE International Symposium on On-Line Testing and Robust System Design (IOLTS)*. 
@@ -91,7 +92,6 @@ This project explores the feasibility of designing a full software stack for a c
 
 ## Outreach
 - [The Ohio State Center Quantum Information Science and Engineering (CQISE) Launching Event](https://quantum.osu.edu/) , Poster Presentation: "Quantum Error Characterization and Analysis on NISQ Machines".
-![CQISE-Poster-2022](https://user-images.githubusercontent.com/5705572/178805244-ca212f02-ec0f-4ba6-a74e-42455a20ff2e.png)
 
 - [2022 George Mason University Quantum Computing Seminar Invited Talk](https://qsec.gmu.edu/event/enabling-robust-quantum-computer-system-by-understanding-errors-from-nisq-machines-by-dr-qiang-guan-of-the-department-of-computer-science-at-kent-state-university-kent-ohio/?instance_id=100) for "Enabling robust quantum computer system by understanding errors from NISQ machines." Sep 2022. 
 
