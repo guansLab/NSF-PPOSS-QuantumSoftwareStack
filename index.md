@@ -26,9 +26,9 @@ This project explores the feasibility of designing a full software stack for a c
 
 [Vipin Chaudhary](https://engineering.case.edu/profiles/vxc204) A veteran of High-Performance Computing (HPC), Dr. Chaudhary has been actively participating in the science, business, government, and technology innovation frontiers of HPC for almost three decades. His contributions range from heading research laboratories and holding executive management positions, to starting new technology ventures. Most recently, he was a Program Director at the National Science Foundation where he was involved in many national initiatives and the Empire Innovation Professor of Computer Science and Engineering at SUNY Buffalo. He cofounded Scalable Informatics, a leading provider of pragmatic, high performance software-defined storage and compute solutions to a wide range of markets, from financial and scientific computing to research and big data analytics. From 2010 to 2013, Dr. Chaudhary was the Chief Executive Officer of Computational Research Laboratories (CRL), a wholly owned Tata Sons company, where he grew the company globally to be an HPC cloud and solutions leader before selling it to Tata Consulting Services. Prior to this, as Senior Director of Advanced Development at Cradle Technologies, Inc., he was responsible for advanced programming tools for multi-processor chips. He was also the Chief Architect at Corio Inc., which had a successful IPO in July, 2000. Dr. Chaudhary was awarded the prestigious President of India Gold Medal in 1986 for securing the first rank amongst graduating students at the Indian Institute of Technology (IIT). He received the B.Tech. (Hons.) degree in Computer Science and Engineering from the Indian Institute of Technology, Kharagpur, in 1986 and a Ph.D. degree from The University of Texas at Austin in 1992.
 
-**Samee Khan (Mississippi State University)**: MSSTATE PI
-
 <img width="200" alt="samee-photo" src="/NSF-PPOSS-QuantumSoftwareStack/docs/assets/Samee.jpeg">
+
+**Samee Khan (Mississippi State University)**: MSSTATE PI
 
 [Samee Khan](https://my.ece.msstate.edu/faculty/skhan/) Samee U. Khan received a PhD in 2007 from the University of Texas. Currently, he is the James W. Bagley Chair Professor and Department Head of Electrical & Computer Engineering at the Mississippi State University (MSU). Before arriving at MSU, he was Cluster Lead (2016-2020) for Computer Systems Research at National Science Foundation and the Walter B. Booth Professor at North Dakota State University. His research interests include optimization, robustness, and security of computer systems. His work has appeared in over 400 publications. He is associate editor of IEEE Transactions on Cloud Computing and Journal of Parallel and Distributed Computing.
 
@@ -53,7 +53,8 @@ This project explores the feasibility of designing a full software stack for a c
 [Mark Novotny](https://newton.ph.msstate.edu/~novotny/index.html) is a W. L. Giles Distinguished Professor at Mississippi State University, and an Elected Fellow of the American Association for the Advancement of Science and also American Physical Society for "original algorithm development and applications of computational statistical mechanics to equilibrium and non-equilibrium problems in condensed-matter physics and materials science.
 
 
-![Shuai profile](/NSF-PPOSS-QuantumSoftwareStack/docs/assets/shuai.png)
+<img width="200" alt="mark-photo" src="/NSF-PPOSS-QuantumSoftwareStack/docs/assets/shuai.png">
+
 **Shuai Xu (Case Western Reserve University)**: CWRU CO-PI
 
 [Shuai Xu](https://engineering.case.edu/profiles/sxx214) is an assistant professor at Case Western Reserve University, Department of Computer and Data Sciences, his research interest lies in theoretical computer science, with a focus on designing efficient algorithms and Fourier analysis of Boolean functions. He is also interested in quantum computing. 
