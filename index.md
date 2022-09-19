@@ -8,8 +8,6 @@
 
 **Project Duration**: 7/15/2022 - 6/30/2023
 
-## Overview
-![Overview](https://user-images.githubusercontent.com/5705572/127583380-211a8c53-e35e-4eec-b934-81be021890ce.jpg)
 
 ## Abstract
 
