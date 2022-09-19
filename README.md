@@ -1,1 +1,1 @@
-Github repository for NSF CSSI Project "ROCCI: Integrated Cyberinfrastructure for In Situ Lossy Compression Optimization Based on Post Hoc Analysis Requirements"
+Github repository for NSF PPoSS Project "Software Stack for Scalable Heterogeneous NISQ Cluster"
