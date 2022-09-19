@@ -8,9 +8,6 @@
 
 **Project Duration**: 7/15/2022 - 6/30/2023
 
-## Overview
-![Overview](https://user-images.githubusercontent.com/5705572/127583380-211a8c53-e35e-4eec-b934-81be021890ce.jpg)
-
 ## Abstract
 
 Development of large-scale and practical quantum computers is a priority for many countries, industries, and researchers. Demonstrating quantum computers at scale will change the computing model as it is currently known forever, enabling scientific discoveries at an unprecedented pace. This project’s novelties are in designing future quantum systems as a cluster of heterogeneous quantum computers. Such an approach is significantly different from all existing endeavors, as it will be cost effective, scalable, more usable, and more reliable. The project’s impacts include outlining the challenges in such systems, proposing solutions, engaging the community, and describing a plan to build a full software stack for such heterogeneous quantum-computing-based clusters. The project will also engage the multidisciplinary quantum computing community through three invited workshops to inform the potential path towards solutions for the challenges outlined. Through a backbone stakeholder committee, the project will ensure sustainable and sustained workforce development and broadening participation in computing objectives, outcomes, and impact at scale. In addition, the project personnel have a strong commitment to increasing participation of underrepresented groups (including women, racial minorities, and persons with disabilities) in planned activities.
