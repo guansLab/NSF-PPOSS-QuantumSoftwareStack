@@ -38,7 +38,7 @@ This project explores the feasibility of designing a full software stack for a c
 
 **Qiang Guan (Kent State University)**: KENTSTATE PI
 
-[Qiang Guan](http://www.guans.cs.kent.edu/) is an assistant professor in Department of Computer Science at Kent State University, Kent, Ohio. Dr. Qiang Guan is the director of GUANS Lab . He is also a guest scientist of Los Alamos National Laboratory. He was a scientist in Data Science at Scale Team, at Los Alamos National Laboratory. He was mentored by Dr. Nathan DeBardeleben, Sean Blanchard and Dr. James Ahrens. He was the technical lead of BEE (Build and Execution Environment) project at Los Alamos National Laboratory. He obtained the Ph.D. degree in Computer Science and Engineering from University of North Texas, Denton, Texas, in 2014. 
+[Qiang Guan](http://www.guans.cs.kent.edu/) is an assistant professor in the Department of Computer Science at Kent State University, Kent, Ohio. Dr. Qiang Guan is the director of GUANS Lab. He is also a guest scientist at Los Alamos National Laboratory. He was a scientist in Data Science at Scale Team, at Los Alamos National Laboratory. He was mentored by Dr. Nathan DeBardeleben, Sean Blanchard and Dr. James Ahrens. He was the lead of the BEE (Build and Execution Environment) project at Los Alamos National Laboratory. He obtained his Ph.D. degree in Computer Science and Engineering from the University of North Texas, Denton, Texas, in 2014. Dr. Guan is the recipient of the NSF CAREER Award in 2023. 
 
 <img width="200" alt="xiaosong-photo" src="/NSF-PPOSS-QuantumSoftwareStack/docs/assets/xiaosong.jpeg">
 
@@ -52,7 +52,7 @@ This project explores the feasibility of designing a full software stack for a c
 
 **Mark Novotny (Mississippi State University)**: MSSTATE CO-PI
 
-[Mark Novotny](https://newton.ph.msstate.edu/~novotny/index.html) is a W. L. Giles Distinguished Professor at Mississippi State University, and an Elected Fellow of the American Association for the Advancement of Science and also American Physical Society for "original algorithm development and applications of computational statistical mechanics to equilibrium and non-equilibrium problems in condensed-matter physics and materials science.
+[Mark Novotny](https://newton.ph.msstate.edu/~novotny/index.html) is a W. L. Giles Distinguished Professor at Mississippi State University, and an Elected Fellow of the American Association for the Advancement of Science and also the American Physical Society for "original algorithm development and applications of computational statistical mechanics to equilibrium and non-equilibrium problems in condensed-matter physics and materials science.
 
 
 <img width="200" alt="mark-photo" src="/NSF-PPOSS-QuantumSoftwareStack/docs/assets/shuai.png">
@@ -112,7 +112,7 @@ Analysis Approach on NISQ Devices," IEEE Quantum Week (QCE), 2023.
 
 ## Outreach
 - [Tutorial](https://ieeexplore.ieee.org/document/10206987), Quantum Computing Reliability: Problems, Tools, and Potential Solutions, DSN 2023. 
-- [The Ohio State Center Quantum Information Science and Engineering (CQISE) Launching Event](https://quantum.osu.edu/) , Poster Presentation: "Quantum Error Characterization and Analysis on NISQ Machines".
+- [The Ohio State Center Quantum Information Science and Engineering (CQISE) Launching Event](https://quantum.osu.edu/), Poster Presentation: "Quantum Error Characterization and Analysis on NISQ Machines".
 
 - [2022 George Mason University Quantum Computing Seminar Invited Talk](https://qsec.gmu.edu/event/enabling-robust-quantum-computer-system-by-understanding-errors-from-nisq-machines-by-dr-qiang-guan-of-the-department-of-computer-science-at-kent-state-university-kent-ohio/?instance_id=100) for "Enabling robust quantum computer system by understanding errors from NISQ machines." Sep 2022. 
 
@@ -120,4 +120,4 @@ Analysis Approach on NISQ Devices," IEEE Quantum Week (QCE), 2023.
 
 ## Acknowledgement & Disclaimer
 
-This material is based upon work supported by the National Science Foundation under Grants No. 226923, 2217021, 2216519 and 2216896. Any opinions, findings, and conclusions or recommendations expressed in this material are those of the author(s) and do not necessarily reflect the views of the National Science Foundation.
+This material is based upon work supported by the National Science Foundation under Grants No. 226923, 2217021, 2216519, and 2216896. Any opinions, findings, conclusions, or recommendations expressed in this material are those of the author(s) and do not necessarily reflect the views of the National Science Foundation.
