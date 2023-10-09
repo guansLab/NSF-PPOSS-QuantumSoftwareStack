@@ -8,7 +8,7 @@
 
 **Awards**: [2216923](https://www.nsf.gov/awardsearch/showAward?AWD_ID=2216923) (CWRU, $143K), [2217021](https://www.nsf.gov/awardsearch/showAward?AWD_ID=2217021) (KENTSTATE, $44K), [2216896](https://www.nsf.gov/awardsearch/showAward?AWD_ID=2216896) (MSSTATE, $34K), [2216519](https://www.nsf.gov/awardsearch/showAward?AWD_ID=2216519) (UW, $21K), 
 
-**Project Duration**: 7/15/2022 - 6/30/2023
+**Project Duration**: 7/15/2022 - 6/30/2024
 
 
 ## Abstract
@@ -80,18 +80,30 @@ This project explores the feasibility of designing a full software stack for a c
 
 **Priyabrata Senapati (Kent State University)**
 
+**Waylon Luo (Kent State University)**
+
 **Vinooth Kulkarni (Case Western Reserve University)** 
 
 **Aaron Orenstein (Case Western Reserve University)**
 
+**Ethan Hansen (Case Western Reserve University)**
+
+**Xinpeng Li (CASE Western Reserve University)**
+
 ## Publications
+- [**QCE '23 BEST PAPER**] Zhirui Hu, Robert Wolle, Mingzhen Tian, Qiang Guan, Travis Humble,
+Weiwen Jiang "Toward High-fidelity Quantum Learning on Unstable Devices via Efficient Run-time Calibration", IEEE Quantum Week (QCE), 2023.
 - [**QCE '23**] Priyabrata Senapati, Zhepeng Wang, Weiwen Jiang, Travis Humble, Bo Fang, Shuai Xu, Qiang Guan, "Towards Redefining the Reproducibility in Quantum Computing: A Data
 Analysis Approach on NISQ Devices," IEEE Quantum Week (QCE), 2023.
+- [**TDSC**] Daniel Oliveira, Edoardo Giusto, Betis Baheri, Qiang Guan, Bartolomeo Montrucchio, Paolo Rech, "A systematic methodology to compute the quantum vulnerability factors for quantum circuits". TDSC, 2023.
+- [**QCCC '23**] Boyuan Zhang, Bo Fang, Qiang Guan, Ang Li, Dingwen Tao, "HQ-Sim: High-performance State Vector Simulation of Quantum Circuits on Heterogeneous HPC Systems", QCCC, 2023.
+- [**QCCC '23**] Priyabrata Senapati, Tushar M Athawale, David Pugmire, Qiang Guan, "Advancing Comprehension of Quantum Application Outputs: A Visualization Technique", QCCC, 2023.
 - [**QCE '23**] Daniel T. Chen, Ethan H. Hansen, Xinpeng Li, Aaron Orenstein, Vinooth Kulkarni, Vipin Chaudhary, Qiang Guan, Ji Liu, Yang Zhang, Shuai Xu, "Online Detection of Golden Circuit Cutting Points," IEEE Quantum Week (QCE), 2023.
+- [**EuroVis '23**], Shaolun Ruan, Ribo Yuan, Qiang Guan, Yanna Lin, Ying Mao, Weiwen Jiang, Zhepeng Wang, Wei Xu, Yong Wang, "VENUS: A Geometrical Representation for Quantum State Visualization". EuroVis, 2023.
 - [**IOLTS '22**] Betis Baheri, Qiang Guan, Vipin Chaudhary. "Quantum Noise in the Flow of Time: A Temporal Study of the Noise in Quantum Computers." *The IEEE International Symposium on On-Line Testing and Robust System Design (IOLTS)*. 
 - [**QCE '22**] Qiang Guan, Betis Baheri, Zixhuan Xu, Ying Mao, Vipin Chaudhary, Shuai Xu, Bo Fang, "Pinpointing the System Reliability Degradation in NISQ Machines", IEEE Quantum Week (QCE), 2022 
 - [**QCE '22**] Daniel Chen, Betis Baheri, Vipin Chaudhary, Qiang Guan, Ning Xie, Shuai Xu, "Approximate Quantum Circuit Reconstruction", IEEE Quantum Week (QCE), 2022.
-- [**IEEE VIS '22**] Shaolun Ruan, Yong Wang, Weiwen Jiang, Ying Mao, Qiang Guan, VACSEN: A Visualization Approach for Noise Awareness in Quantum Computing, IEEE VIS, 2022.
+- [**TVCG '22**] Shaolun Ruan, Yong Wang, Weiwen Jiang, Ying Mao, Qiang Guan, "VACSEN: A Visualization Approach for Noise Awareness in Quantum Computing", TVCG in IEEE VIS, 2022.
 
 
 ## Software
@@ -99,6 +111,7 @@ Analysis Approach on NISQ Devices," IEEE Quantum Week (QCE), 2023.
 
 
 ## Outreach
+- [Tutorial](https://ieeexplore.ieee.org/document/10206987), Quantum Computing Reliability: Problems, Tools, and Potential Solutions, DSN 2023. 
 - [The Ohio State Center Quantum Information Science and Engineering (CQISE) Launching Event](https://quantum.osu.edu/) , Poster Presentation: "Quantum Error Characterization and Analysis on NISQ Machines".
 
 - [2022 George Mason University Quantum Computing Seminar Invited Talk](https://qsec.gmu.edu/event/enabling-robust-quantum-computer-system-by-understanding-errors-from-nisq-machines-by-dr-qiang-guan-of-the-department-of-computer-science-at-kent-state-university-kent-ohio/?instance_id=100) for "Enabling robust quantum computer system by understanding errors from NISQ machines." Sep 2022. 
