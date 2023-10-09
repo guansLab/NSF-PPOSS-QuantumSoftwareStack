@@ -85,6 +85,9 @@ This project explores the feasibility of designing a full software stack for a c
 **Aaron Orenstein (Case Western Reserve University)**
 
 ## Publications
+- [**QCE '23**] Priyabrata Senapati, Zhepeng Wang, Weiwen Jiang, Travis Humble, Bo Fang, Shuai Xu, Qiang Guan, "Towards Redefining the Reproducibility in Quantum Computing: A Data
+Analysis Approach on NISQ Devices," IEEE Quantum Week (QCE), 2023.
+- [**QCE '23**] Daniel T. Chen, Ethan H. Hansen, Xinpeng Li, Aaron Orenstein, Vinooth Kulkarni, Vipin Chaudhary, Qiang Guan, Ji Liu, Yang Zhang, Shuai Xu, "Online Detection of Golden Circuit Cutting Points," IEEE Quantum Week (QCE), 2023.
 - [**IOLTS '22**] Betis Baheri, Qiang Guan, Vipin Chaudhary. "Quantum Noise in the Flow of Time: A Temporal Study of the Noise in Quantum Computers." *The IEEE International Symposium on On-Line Testing and Robust System Design (IOLTS)*. 
 - [**QCE '22**] Qiang Guan, Betis Baheri, Zixhuan Xu, Ying Mao, Vipin Chaudhary, Shuai Xu, Bo Fang, "Pinpointing the System Reliability Degradation in NISQ Machines", IEEE Quantum Week (QCE), 2022 
 - [**QCE '22**] Daniel Chen, Betis Baheri, Vipin Chaudhary, Qiang Guan, Ning Xie, Shuai Xu, "Approximate Quantum Circuit Reconstruction", IEEE Quantum Week (QCE), 2022.
