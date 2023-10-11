@@ -8,7 +8,7 @@
 
 **Awards**: [2216923](https://www.nsf.gov/awardsearch/showAward?AWD_ID=2216923) (CWRU, $143K), [2217021](https://www.nsf.gov/awardsearch/showAward?AWD_ID=2217021) (KENTSTATE, $44K), [2216896](https://www.nsf.gov/awardsearch/showAward?AWD_ID=2216896) (MSSTATE, $34K), [2216519](https://www.nsf.gov/awardsearch/showAward?AWD_ID=2216519) (UW, $21K), 
 
-**Project Duration**: 7/15/2022 - 6/30/2023
+**Project Duration**: 7/15/2022 - 6/30/2024
 
 
 ## Abstract
@@ -38,7 +38,7 @@ This project explores the feasibility of designing a full software stack for a c
 
 **Qiang Guan (Kent State University)**: KENTSTATE PI
 
-[Qiang Guan](http://www.guans.cs.kent.edu/) is an assistant professor in Department of Computer Science at Kent State University, Kent, Ohio. Dr. Qiang Guan is the director of GUANS Lab . He is also a guest scientist of Los Alamos National Laboratory. He was a scientist in Data Science at Scale Team, at Los Alamos National Laboratory. He was mentored by Dr. Nathan DeBardeleben, Sean Blanchard and Dr. James Ahrens. He was the technical lead of BEE (Build and Execution Environment) project at Los Alamos National Laboratory. He obtained the Ph.D. degree in Computer Science and Engineering from University of North Texas, Denton, Texas, in 2014. 
+[Qiang Guan](http://www.guans.cs.kent.edu/) is an assistant professor in the Department of Computer Science at Kent State University, Kent, Ohio. Dr. Qiang Guan is the director of GUANS Lab. He is also a guest scientist at Los Alamos National Laboratory. He was a scientist in Data Science at Scale Team, at Los Alamos National Laboratory. He was mentored by Dr. Nathan DeBardeleben, Sean Blanchard and Dr. James Ahrens. He was the lead of the BEE (Build and Execution Environment) project at Los Alamos National Laboratory. He obtained his Ph.D. degree in Computer Science and Engineering from the University of North Texas, Denton, Texas, in 2014. Dr. Guan is the recipient of the NSF CAREER Award in 2023. 
 
 <img width="200" alt="xiaosong-photo" src="/NSF-PPOSS-QuantumSoftwareStack/docs/assets/xiaosong.jpeg">
 
@@ -52,7 +52,7 @@ This project explores the feasibility of designing a full software stack for a c
 
 **Mark Novotny (Mississippi State University)**: MSSTATE CO-PI
 
-[Mark Novotny](https://newton.ph.msstate.edu/~novotny/index.html) is a W. L. Giles Distinguished Professor at Mississippi State University, and an Elected Fellow of the American Association for the Advancement of Science and also American Physical Society for "original algorithm development and applications of computational statistical mechanics to equilibrium and non-equilibrium problems in condensed-matter physics and materials science.
+[Mark Novotny](https://newton.ph.msstate.edu/~novotny/index.html) is a W. L. Giles Distinguished Professor at Mississippi State University, and an Elected Fellow of the American Association for the Advancement of Science and also the American Physical Society for "original algorithm development and applications of computational statistical mechanics to equilibrium and non-equilibrium problems in condensed-matter physics and materials science.
 
 
 <img width="200" alt="mark-photo" src="/NSF-PPOSS-QuantumSoftwareStack/docs/assets/shuai.png">
@@ -80,18 +80,30 @@ This project explores the feasibility of designing a full software stack for a c
 
 **Priyabrata Senapati (Kent State University)**
 
+**Waylon Luo (Kent State University)**
+
 **Vinooth Kulkarni (Case Western Reserve University)** 
 
 **Aaron Orenstein (Case Western Reserve University)**
 
+**Ethan Hansen (Case Western Reserve University)**
+
+**Xinpeng Li (CASE Western Reserve University)**
+
 ## Publications
+- [**QCE '23 BEST PAPER**] Zhirui Hu, Robert Wolle, Mingzhen Tian, Qiang Guan, Travis Humble,
+Weiwen Jiang "Toward High-fidelity Quantum Learning on Unstable Devices via Efficient Run-time Calibration", IEEE Quantum Week (QCE), 2023.
 - [**QCE '23**] Priyabrata Senapati, Zhepeng Wang, Weiwen Jiang, Travis Humble, Bo Fang, Shuai Xu, Qiang Guan, "Towards Redefining the Reproducibility in Quantum Computing: A Data
 Analysis Approach on NISQ Devices," IEEE Quantum Week (QCE), 2023.
+- [**TDSC**] Daniel Oliveira, Edoardo Giusto, Betis Baheri, Qiang Guan, Bartolomeo Montrucchio, Paolo Rech, "A systematic methodology to compute the quantum vulnerability factors for quantum circuits". TDSC, 2023.
+- [**QCCC '23**] Boyuan Zhang, Bo Fang, Qiang Guan, Ang Li, Dingwen Tao, "HQ-Sim: High-performance State Vector Simulation of Quantum Circuits on Heterogeneous HPC Systems", QCCC, 2023.
+- [**QCCC '23**] Priyabrata Senapati, Tushar M Athawale, David Pugmire, Qiang Guan, "Advancing Comprehension of Quantum Application Outputs: A Visualization Technique", QCCC, 2023.
 - [**QCE '23**] Daniel T. Chen, Ethan H. Hansen, Xinpeng Li, Aaron Orenstein, Vinooth Kulkarni, Vipin Chaudhary, Qiang Guan, Ji Liu, Yang Zhang, Shuai Xu, "Online Detection of Golden Circuit Cutting Points," IEEE Quantum Week (QCE), 2023.
+- [**EuroVis '23**], Shaolun Ruan, Ribo Yuan, Qiang Guan, Yanna Lin, Ying Mao, Weiwen Jiang, Zhepeng Wang, Wei Xu, Yong Wang, "VENUS: A Geometrical Representation for Quantum State Visualization". EuroVis, 2023.
 - [**IOLTS '22**] Betis Baheri, Qiang Guan, Vipin Chaudhary. "Quantum Noise in the Flow of Time: A Temporal Study of the Noise in Quantum Computers." *The IEEE International Symposium on On-Line Testing and Robust System Design (IOLTS)*. 
 - [**QCE '22**] Qiang Guan, Betis Baheri, Zixhuan Xu, Ying Mao, Vipin Chaudhary, Shuai Xu, Bo Fang, "Pinpointing the System Reliability Degradation in NISQ Machines", IEEE Quantum Week (QCE), 2022 
 - [**QCE '22**] Daniel Chen, Betis Baheri, Vipin Chaudhary, Qiang Guan, Ning Xie, Shuai Xu, "Approximate Quantum Circuit Reconstruction", IEEE Quantum Week (QCE), 2022.
-- [**IEEE VIS '22**] Shaolun Ruan, Yong Wang, Weiwen Jiang, Ying Mao, Qiang Guan, VACSEN: A Visualization Approach for Noise Awareness in Quantum Computing, IEEE VIS, 2022.
+- [**TVCG '22**] Shaolun Ruan, Yong Wang, Weiwen Jiang, Ying Mao, Qiang Guan, "VACSEN: A Visualization Approach for Noise Awareness in Quantum Computing", TVCG in IEEE VIS, 2022.
 
 
 ## Software
@@ -99,7 +111,8 @@ Analysis Approach on NISQ Devices," IEEE Quantum Week (QCE), 2023.
 
 
 ## Outreach
-- [The Ohio State Center Quantum Information Science and Engineering (CQISE) Launching Event](https://quantum.osu.edu/) , Poster Presentation: "Quantum Error Characterization and Analysis on NISQ Machines".
+- [Tutorial](https://ieeexplore.ieee.org/document/10206987), Quantum Computing Reliability: Problems, Tools, and Potential Solutions, DSN 2023. 
+- [The Ohio State Center Quantum Information Science and Engineering (CQISE) Launching Event](https://quantum.osu.edu/), Poster Presentation: "Quantum Error Characterization and Analysis on NISQ Machines".
 
 - [2022 George Mason University Quantum Computing Seminar Invited Talk](https://qsec.gmu.edu/event/enabling-robust-quantum-computer-system-by-understanding-errors-from-nisq-machines-by-dr-qiang-guan-of-the-department-of-computer-science-at-kent-state-university-kent-ohio/?instance_id=100) for "Enabling robust quantum computer system by understanding errors from NISQ machines." Sep 2022. 
 
@@ -107,4 +120,4 @@ Analysis Approach on NISQ Devices," IEEE Quantum Week (QCE), 2023.
 
 ## Acknowledgement & Disclaimer
 
-This material is based upon work supported by the National Science Foundation under Grants No. 226923, 2217021, 2216519 and 2216896. Any opinions, findings, and conclusions or recommendations expressed in this material are those of the author(s) and do not necessarily reflect the views of the National Science Foundation.
+This material is based upon work supported by the National Science Foundation under Grants No. 226923, 2217021, 2216519, and 2216896. Any opinions, findings, conclusions, or recommendations expressed in this material are those of the author(s) and do not necessarily reflect the views of the National Science Foundation.
