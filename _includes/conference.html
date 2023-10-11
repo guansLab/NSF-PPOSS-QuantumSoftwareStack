@@ -9,6 +9,50 @@
   .header {
     margin-top: 10px;
   }
+
+  /* Row */
+  .flex-row {
+    width: fit-content;
+    display: flex;
+    flex-direction: row;
+    border: 1px solid black;
+    padding: 0;
+  }
+
+  /* -----Table Styles----- */
+  /* Column */
+  .flex-column {
+    display: flex;
+    flex-direction: column;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+  }
+
+  /* Bordered rows */
+  .flex-column span {
+    padding: 0 2px;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+  }
+
+  /* Zebra stripes */
+  .flex-column span:nth-child(odd) {
+    background-color: rgb(225, 225, 225);
+  }
+
+  /* Header */
+  .flex-column span:first-child {
+    font-weight: bold;
+    background-color: rgb(180, 180, 180);
+    border-top: 0;
+    text-align: center;
+  }
+
+  /* Last row */
+  .flex-column span:last-child {
+    border-bottom: 0;
+  }
+  /* -----Table Styles----- */
 </style>
 
 <h1 id="conference">Workshop on Quantum Applications</h1>
@@ -24,9 +68,59 @@ software stack and hardware.
 </p>
 
 <h2 class="header">Agenda</h2>
-November 6, 2023. 8am-5pm
-<br>
-Details coming soon
+<p>November 6, 2023. 8am-5pm</p>
+<div class="flex-row">
+  <div class="flex-column" style="text-align: end;">
+    <span>Time</span>
+    <span>7:30AM</span>
+    <span>8:00AM</span>
+    <span>8:05AM</span>
+    <span>8:15AM</span>
+    <span>8:45AM</span>
+    <span>9:30AM</span>
+    <span>9:45AM</span>
+    <span>10:00AM</span>
+    <span>10:30AM</span>
+    <span>11:15AM</span>
+    <span>11:30AM</span>
+    <span>12:00PM</span>
+    <span>1:30PM</span>
+    <span>2:00PM</span>
+    <span>2:45PM</span>
+    <span>3:00PM</span>
+    <span>3:15PM</span>
+    <span>3:45PM</span>
+    <span>4:30PM</span>
+    <span>4:45PM</span>
+    <span>5:15PM</span>
+    <span>6:00PM</span>
+  </div>
+  <div class="flex-column">
+    <span>Activity</span>
+    <span>Registration and Breakfast</span>
+    <span>Welcome by NSF</span>
+    <span>Expectations from Workshop - PPoSS PIs</span>
+    <span>Invited Talk</span>
+    <span>Breakout Sessions</span>
+    <span>Reporting by Breakout Sessions</span>
+    <span>Coffee Break</span>
+    <span>Invited Talk</span>
+    <span>Breakout Sessions</span>
+    <span>Reporting by Breakout Sessions</span>
+    <span>Lunch and Networking</span>
+    <span>Visit CCF for IBM Quantum Computer 127 Qubit</span>
+    <span>Invited Talk</span>
+    <span>Breakout Sessions</span>
+    <span>Reporting by Breakout Sessions</span>
+    <span>Coffee Break</span>
+    <span>Invited Talk</span>
+    <span>Breakout Sessions</span>
+    <span>Reporting by Breakout Sessions</span>
+    <span>Open Session</span>
+    <span>Writing Breakout Session Reports</span>
+    <span>Dinner</span>
+  </div>
+</div>
 
 
 <h2 class="header">Logistics</h2>
