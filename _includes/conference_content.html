@@ -88,6 +88,10 @@
   table tr:nth-child(odd) {
     background-color: rgb(225, 225, 225);
   }
+
+  .table-title {
+    margin-bottom: 1px;
+  }
 </style>
 
 <h1>Workshop on Quantum Applications</h1>
@@ -105,25 +109,12 @@
 <h2 class="header">Agenda</h2>
 <p>November 6, 2023</p>
 <table id="table"></table>
-<br>
-<table>
-  <tr>
-    <th>Assignments for Breakout Session 1</th>
-    <th>Assignments for Breakout Session 2</th>
-    <th>Assignments for Breakout Session 3</th>
-  </tr>
-  <tr>
-    <td>
-      <table id="breakout1" style="width: 100%"></table>
-    </td>
-    <td>
-      <table id="breakout2" style="width: 100%"></table>
-    </td>
-    <td>
-      <table id="breakout3" style="width: 100%"></table>
-    </td>
-  </tr>
-</table>
+<h4 class="table-title">Assignments for Breakout Session 1</h4>
+<table id="breakout1" style="width: 100%;"></table>
+<h4 class="table-title">Assignments for Breakout Session 2</h4>
+<table id="breakout2" style="width: 100%"></table>
+<h4 class="table-title">Assignments for Breakout Session 3</h4>
+<table id="breakout3" style="width: 100%"></table>
 <script>
   fill_table('table', AGENDA, "A1:B", true);
   fill_table('breakout1', AGENDA, "A26:C", true);
