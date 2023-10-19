@@ -1,8 +1,8 @@
-root: NSF_Conference_Site
+root: NSF-PPOSS-QuantumSoftwareStack
 pages:
 - title: Home
   url:
-- title: Quantum Applications
+- title: Workshop on Quantum Applications
   url: conference
 - title: Payment
   url: payment
