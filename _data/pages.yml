@@ -1,0 +1,8 @@
+root: NSF_Conference_Site
+pages:
+- title: Home
+  url:
+- title: Quantum Applications
+  url: conference
+- title: Payment
+  url: payment

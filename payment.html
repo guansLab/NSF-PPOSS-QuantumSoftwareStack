@@ -1,0 +1,27 @@
+---
+---
+
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: " en-US" }}">
+
+<head>
+    {% include shared/head.html %}
+</head>
+
+<body>
+    {% include shared/header.html %}
+
+    <div class="wrapper">
+        <nav>
+            <ul></ul>
+        </nav>
+        <section>
+            {% include payment_content.html %}
+        </section>
+        {% include shared/footer.html %}
+    </div>
+
+    {% include shared/analytics.html %}
+</body>
+
+</html>

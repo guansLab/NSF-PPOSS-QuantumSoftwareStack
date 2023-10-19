@@ -1,0 +1,32 @@
+<!-- Example of how to create a new page. Be sure to copy the hyphens as well. -->
+---
+---
+
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: " en-US" }}">
+
+<head>
+    {% include shared/head.html %}
+</head>
+
+<body>
+    {% include shared/header.html %}
+
+    <div class="wrapper">
+        <nav>
+            <ul></ul>
+        </nav>
+        <section>
+            <!--
+                Insert html content here
+                To include the contents of `_includes/your_content.html`, add:
+                    {% include your_content.html %}
+            -->
+        </section>
+        {% include shared/footer.html %}
+    </div>
+
+    {% include shared/analytics.html %}
+</body>
+
+</html>

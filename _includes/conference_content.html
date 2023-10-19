@@ -1,0 +1,173 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+  integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+  crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<script>
+  const AGENDA = "2PACX-1vS9ySFPe-5_7irGSfrTqZxABmXilN-CSUfUoSBsvNfuCjDesXMjY5Llj5NHEOTC6UZkNTWGrbdj4uws";
+
+  function get_data(sheet_id, range, unbounded_y) {
+    return fetch(`https://docs.google.com/spreadsheets/d/e/${sheet_id}/pub?output=csv&range=${range}`, {
+      method: 'GET'
+    }).then(res => res.text()).then(txt => {
+      var cols = txt.split('\r\n');
+      // Stop at first empty row
+      if (unbounded_y) {
+        var idx = cols.findIndex(v => v.replace(',', '') === '');
+        if (idx !== -1) {
+          cols = cols.slice(0, idx);
+        }
+      }
+      return cols.map(row => row.split(','));
+    });
+  }
+
+  function fill_table(id, sheet_id, data_range, unbounded_y) {
+    var table = document.getElementById(id);
+
+    if (table == undefined || table == null) {
+      return;
+    }
+
+    get_data(sheet_id, data_range, unbounded_y).then(data => {
+      if (data.length == 0) {
+        table.innerHTML = "";
+        return;
+      }
+
+      // Headers
+      console.log(data);
+      headers = data[0].map(txt => `<th>${txt}</th>`).join('');
+      body = data.slice(1).map((row, i) => `<tr>${row.map(txt => `<td>${txt}</td>`).join('')}</tr>`).join('');
+      table.innerHTML = `<tr>${headers}</tr>${body}`;
+    });
+  }
+</script>
+
+<style>
+  .link-btn {
+    color: black;
+    text-decoration: none;
+    padding: 2px;
+  }
+
+  .header {
+    margin-top: 10px;
+  }
+
+  /* Row */
+  .flex-row {
+    width: fit-content;
+    display: flex;
+    flex-direction: row;
+    border: 1px solid black;
+    padding: 0;
+  }
+
+  /* -----Table Styles----- */
+  /* No space between cells */
+  table {
+    border-collapse: collapse;
+  }
+
+  /* Table borders */
+  table,
+  td,
+  th {
+    border: 2px solid black;
+  }
+
+  /* Column Headers */
+  th {
+    font-weight: bold;
+    background-color: rgb(180, 180, 180);
+    border-top: 0;
+    text-align: center;
+  }
+
+  /* Zebra Stripes */
+  table tr:nth-child(odd) {
+    background-color: rgb(225, 225, 225);
+  }
+</style>
+
+<h1>Workshop on Quantum Applications</h1>
+
+<h2 class="header">Details</h2>
+
+<p>
+  This is the first of three invited workshops to inform the potential path towards the challenges in developing a
+  full software stack for a cluster of heterogeneous Noisy Intermediate-Scale Quantum (NISQ) machines.
+  This workshop focuses on quantum applications and their requirements for the full-stack.
+  The outcome will be a comprehensive report to the community that will span quantum applications,
+  software stack and hardware.
+</p>
+
+<h2 class="header">Agenda</h2>
+<p>November 6, 2023</p>
+<table id="table"></table>
+<br>
+<table>
+  <tr>
+    <th>Assignments for Breakout Session 1</th>
+    <th>Assignments for Breakout Session 2</th>
+    <th>Assignments for Breakout Session 3</th>
+  </tr>
+  <tr>
+    <td>
+      <table id="breakout1" style="width: 100%"></table>
+    </td>
+    <td>
+      <table id="breakout2" style="width: 100%"></table>
+    </td>
+    <td>
+      <table id="breakout3" style="width: 100%"></table>
+    </td>
+  </tr>
+</table>
+<script>
+  fill_table('table', AGENDA, "A1:B", true);
+  fill_table('breakout1', AGENDA, "A26:C", true);
+  fill_table('breakout2', AGENDA, "E26:G", true);
+  fill_table('breakout3', AGENDA, "I26:K", true);
+</script>
+
+<h2 class="header">Logistics</h2>
+<b>Location:</b>
+<a
+  href="https://www.marriott.com/en-us/hotels/clece-courtyard-cleveland-university-circle/overview/?scid=f2ae0541-1279-4f24-b197-a979c79310b0">Courtyard
+  by Mariott</a> next to Case Western Reserve University
+<br><br>
+<iframe
+  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d357.6453339438518!2d-81.60535264696671!3d41.50797190893409!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8830fb899834b8d1%3A0xd79d3884acb4b374!2sCourtyard%20by%20Marriott%20Cleveland%20University%20Circle!5e0!3m2!1sen!2sus!4v1696612956580!5m2!1sen!2sus"
+  width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+  referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+<br>
+
+<br>
+
+
+
+<br>
+<h2 class="header">Housing Accommodations</h2>
+
+Rooms will be available in Courtyard at a discounted promo rate. Pricing information will be sent out with conference
+invitations.
+
+<br>
+<h2 class="header">Participants</h2>
+Coming soon
+
+<br>
+<h2 class="header">Contact</h2>
+
+<h4 style="display: inline">Vipin Chaudhary</h4>
+<a href="https://engineering.case.edu/about/school-directory/vipin-chaudhary" class="link-btn">
+  <i class="fa fa-globe"></i>
+</a>
+<a href="mailto:vipin.chaudhary@case.edu" class="link-btn">
+  <i class="fa fa-envelope"></i>
+</a>
+<a href="https://www.linkedin.com/in/vipin-chaudhary-379529/" class="link-btn">
+  <i class="fa-brands fa-linkedin"></i>
+</a>
