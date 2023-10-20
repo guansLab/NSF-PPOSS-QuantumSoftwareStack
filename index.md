@@ -88,7 +88,7 @@ This project explores the feasibility of designing a full software stack for a c
 
 **Ethan Hansen (Case Western Reserve University)**
 
-**Xinpeng Li (CASE Western Reserve University)**
+**Xinpeng Li (Case Western Reserve University)**
 
 ## Publications
 - [**QCE '23 BEST PAPER**] Zhirui Hu, Robert Wolle, Mingzhen Tian, Qiang Guan, Travis Humble,
