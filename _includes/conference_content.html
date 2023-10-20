@@ -114,12 +114,6 @@
 <table id="breakout2" style="width: 100%"></table>
 <h3 class="table-title">Assignments for Breakout Session 3</h3>
 <table id="breakout3" style="width: 100%"></table>
-<script>
-  fill_table('table', AGENDA, "A1:B", true);
-  fill_table('breakout1', AGENDA, "D2:F", true);
-  fill_table('breakout2', AGENDA, "H2:J", true);
-  fill_table('breakout3', AGENDA, "L2:N", true);
-</script>
 
 <h2 class="header">Logistics</h2>
 <b>Location:</b>
@@ -146,7 +140,7 @@ invitations.
 
 <br>
 <h2 class="header">Participants</h2>
-Coming soon
+<table id="participants"></table>
 
 <br>
 <h2 class="header">Contact</h2>
@@ -161,3 +155,12 @@ Coming soon
 <a href="https://www.linkedin.com/in/vipin-chaudhary-379529/" class="link-btn">
   <i class="fa-brands fa-linkedin"></i>
 </a>
+
+<!-- Fill tables with data -->
+<script>
+  fill_table('table', AGENDA, "A1:B", true);
+  fill_table('breakout1', AGENDA, "D2:F", true);
+  fill_table('breakout2', AGENDA, "H2:J", true);
+  fill_table('breakout3', AGENDA, "L2:N", true);
+  fill_table('participants', AGENDA, "P2:Q", true);
+</script>
