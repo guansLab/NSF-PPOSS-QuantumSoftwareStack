@@ -96,6 +96,7 @@ Weiwen Jiang "Toward High-fidelity Quantum Learning on Unstable Devices via Effi
 - [**QCE '23**] Priyabrata Senapati, Zhepeng Wang, Weiwen Jiang, Travis Humble, Bo Fang, Shuai Xu, Qiang Guan, "Towards Redefining the Reproducibility in Quantum Computing: A Data
 Analysis Approach on NISQ Devices," IEEE Quantum Week (QCE), 2023.
 - [**TDSC**] Daniel Oliveira, Edoardo Giusto, Betis Baheri, Qiang Guan, Bartolomeo Montrucchio, Paolo Rech, "A systematic methodology to compute the quantum vulnerability factors for quantum circuits". TDSC, 2023.
+- [**QCCC '23**] Betis Baheri, Vipin Chaudhary, Ang Li, Shuai Xu, Bo Fang, Qiang Guan, "Quantum Noise Mitigation: Introducing the Robust Quantum Circuit Scheduler for Enhanced Fidelity and Throughput", QCCC, 2023.
 - [**QCCC '23**] Boyuan Zhang, Bo Fang, Qiang Guan, Ang Li, Dingwen Tao, "HQ-Sim: High-performance State Vector Simulation of Quantum Circuits on Heterogeneous HPC Systems", QCCC, 2023.
 - [**QCCC '23**] Priyabrata Senapati, Tushar M Athawale, David Pugmire, Qiang Guan, "Advancing Comprehension of Quantum Application Outputs: A Visualization Technique", QCCC, 2023.
 - [**QCCC '23**] Ethan H. Hansen, Xinpeng Li, Daniel T. Chen, Vinooth Kulkarni, Vipin Chaudhary, Qiang Guan, Ji Liu, Shuai Xu, "Pulse-Level Variational Quantum Algorithms for Molecular Energy Calculations using Quanlse", QCCC, 2023.
