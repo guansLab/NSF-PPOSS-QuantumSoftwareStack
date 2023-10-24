@@ -1,3 +1,8 @@
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+  integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+  crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 <style>
   label {
     border: 2px solid gray;
@@ -23,6 +28,14 @@
 </style>
 
 <script>
+  function loading(isLoading) {
+    let load = document.getElementById("loading");
+    if (load !== null) {
+      load.hidden = !isLoading;
+      console.log(load.hidden);
+    }
+  }
+
   function updateStatus() {
     // Reset status
     let status = document.getElementById("status");
@@ -58,31 +71,36 @@
       return;
     }
 
+    loading(true);
     fetch("https://rt36h2xhtzgmizasygv7jfyij40ryooj.lambda-url.us-east-2.on.aws/", {
       method: "POST",
       body: JSON.stringify(vals)
     })
       .then(res => res.text())
+      // No need to stop loading as the page will reload
       .then(res => window.location.replace(`${window.location.pathname}#${res === "1" ? "success" : "failure"}`));
   }
 
   function pay() {
+    loading(true);
     fetch("https://4oxktr2gh3xka7o7f7ilyojnuy0rorrp.lambda-url.us-east-2.on.aws/", {
       method: "GET"
     })
       .then(res => res.text())
-      .then(url => {
-        console.log(url);
-        window.location.href = url;
-      });
+      // No need to stop loading as the page is changing
+      .then(url => window.location.href = url);
   }
 </script>
 
 <h1>Registration Fee Payment</h1>
 <p id="status"></p>
+<span id="loading">
+  <i class="fas fa-spinner fa-spin"></i>
+</span>
 <button class="button" onclick="pay()">Proceed to QuikPAY Portal</button>
 
 <script>
+  loading(false);
   updateStatus();
   confirmUser();
 </script>
