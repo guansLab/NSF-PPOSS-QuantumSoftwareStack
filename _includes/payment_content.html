@@ -1,1 +1,87 @@
-<h1>TBD</h1>
+<style>
+  label {
+    border: 2px solid gray;
+    border-radius: 3px;
+    background-color: lightgray;
+    padding: 2px;
+    margin: 0 5px 0 0;
+  }
+
+  input {
+    border: 2px solid gray;
+    border-radius: 3px;
+  }
+
+  #status {
+    padding: 2px 5px;
+    width: fit-content;
+    font-weight: bold;
+    background-color: lightgray;
+    border: 1px solid black;
+    border-radius: 5px;
+  }
+</style>
+
+<script>
+  function updateStatus() {
+    // Reset status
+    let status = document.getElementById("status");
+    if (status === null) {
+      return;
+    }
+
+    if (window.location.hash === "#success") {
+      status.innerText = `Payment was successfully processed. A confirmation email has been sent.`;
+      status.style["color"] = "green";
+      status.hidden = false;
+    } else if (window.location.hash === "#failure") {
+      status.innerText = `Payment failed, please try again.`;
+      status.style["color"] = "#dd0000";
+      status.hidden = false;
+    } else {
+      status.hidden = true;
+    }
+  }
+
+  const KEYS = ["transactionType", "transactionStatus", "email", "accountHolderName", "transactionId"];
+
+  function confirmUser() {
+    // Get url params
+    let params = new URLSearchParams(window.location.search);
+    let vals = KEYS.reduce((d, key) => {
+      d[key] = params.get(key);
+      return d;
+    }, {});
+
+    // Make sure we actually have values
+    if (Object.values(vals).findIndex(v => v === null) !== -1) {
+      return;
+    }
+
+    fetch("https://rt36h2xhtzgmizasygv7jfyij40ryooj.lambda-url.us-east-2.on.aws/", {
+      method: "POST",
+      body: JSON.stringify(vals)
+    })
+      .then(res => res.text())
+      .then(res => window.location.replace(`${window.location.pathname}#${res === "1" ? "success" : "failure"}`));
+  }
+
+  function pay() {
+    fetch("https://4oxktr2gh3xka7o7f7ilyojnuy0rorrp.lambda-url.us-east-2.on.aws/", {
+      method: "GET"
+    })
+      .then(res => res.text())
+      .then(url => {
+        console.log(url);
+        window.location.href = url;
+      });
+  }
+</script>
+
+<h1>Registration Fee Payment</h1>
+<p id="status"></p>
+<button class="button" onclick="pay()">Proceed to QuikPAY Portal</button>
+
+<script>
+  updateStatus()
+</script>
