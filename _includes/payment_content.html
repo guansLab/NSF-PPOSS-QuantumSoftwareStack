@@ -12,19 +12,23 @@
     margin: 0 5px 0 0;
   }
 
-  input {
-    padding: 3px;
-    border: 2px solid gray;
-    border-radius: 3px;
+  #name_input,
+  #status,
+  #pay_button {
+    padding: 3px 5px;
+    border: 2px solid rgb(64, 64, 64);
+    border-radius: 5px;
+  }
+
+  #pay_button:hover {
+    background-color: lightgray;
+    border-radius: 5px;
   }
 
   #status {
-    padding: 2px 5px;
     width: fit-content;
     font-weight: bold;
     background-color: lightgray;
-    border: 1px solid black;
-    border-radius: 5px;
   }
 
   #name_help {
@@ -141,7 +145,7 @@
 <span id="loading" hidden="true">
   <i class="fas fa-spinner fa-spin"></i>
 </span>
-<button class="button" onclick="pay()">Proceed to QuikPAY Portal</button>
+<button id="pay_button" class="button" onclick="pay()">Proceed to QuikPAY Portal</button>
 
 <script>
   updateStatus();
