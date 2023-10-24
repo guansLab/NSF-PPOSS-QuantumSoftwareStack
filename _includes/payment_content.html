@@ -13,6 +13,7 @@
   }
 
   input {
+    padding: 3px;
     border: 2px solid gray;
     border-radius: 3px;
   }
@@ -25,38 +26,53 @@
     border: 1px solid black;
     border-radius: 5px;
   }
+
+  #name_help {
+    padding: 1px 4px;
+    border: 1px solid transparent;
+    border-radius: 10px;
+  }
+
+  #name_help:hover {
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: lightgray;
+  }
+
+  #name_help_text {
+    margin-left: 5px;
+  }
 </style>
 
 <script>
-  function loading(isLoading) {
-    let load = document.getElementById("loading");
-    if (load !== null) {
-      load.hidden = !isLoading;
-      console.log(load.hidden);
+  function show(id, visible) {
+    let el = document.getElementById(id);
+    if (el !== null) {
+      el.hidden = !visible;
     }
   }
 
-  function updateStatus() {
+  function updateStatus(msg = null, valid = false) {
     // Reset status
     let status = document.getElementById("status");
     if (status === null) {
       return;
     }
 
-    if (window.location.hash === "#success") {
-      status.innerText = `Payment was successfully processed. A confirmation email has been sent.`;
-      status.style["color"] = "green";
+    if (msg !== null) {
+      status.innerText = msg;
+      status.style["color"] = valid ? "green" : "#dd0000";
       status.hidden = false;
+    } else if (window.location.hash === "#success") {
+      updateStatus("Payment was successfully processed. A confirmation email has been sent.", true);
     } else if (window.location.hash === "#failure") {
-      status.innerText = `Payment failed, please try again.`;
-      status.style["color"] = "#dd0000";
-      status.hidden = false;
+      updateStatus("Payment failed. If you believe you made a mistake, please try again. Otherwise, contact Workshop coordinators for assisstance.", false);
     } else {
       status.hidden = true;
     }
   }
 
-  const KEYS = ["transactionType", "transactionStatus", "email", "accountHolderName", "transactionId"];
+  const KEYS = ["transactionType", "transactionStatus", "name", "email", "accountHolderName", "transactionId"];
 
   function confirmUser() {
     // Get url params
@@ -71,36 +87,63 @@
       return;
     }
 
-    loading(true);
+    show("loading", true);
     fetch("https://rt36h2xhtzgmizasygv7jfyij40ryooj.lambda-url.us-east-2.on.aws/", {
       method: "POST",
       body: JSON.stringify(vals)
     })
       .then(res => res.text())
-      // No need to stop loading as the page will reload
-      .then(res => window.location.replace(`${window.location.pathname}#${res === "1" ? "success" : "failure"}`));
+      .then(res => {
+        // Set loading to false in case the user hits the back button
+        show("loading", false);
+        window.location.replace(`${window.location.pathname}#${res === "1" ? "success" : "failure"}`);
+      });
   }
 
   function pay() {
-    loading(true);
+    let name = document.getElementById("name_input")?.value;
+
+    if (name === null || name === "") {
+      updateStatus("Name field is required", false);
+      return;
+    }
+
+    show("loading", true);
     fetch("https://4oxktr2gh3xka7o7f7ilyojnuy0rorrp.lambda-url.us-east-2.on.aws/", {
-      method: "GET"
+      method: "POST",
+      body: name
     })
       .then(res => res.text())
-      // No need to stop loading as the page is changing
-      .then(url => window.location.href = url);
+      .then(url => {
+        // Set loading to false in case the user hits the back button
+        show("loading", false);
+        window.location.href = url;
+      });
   }
 </script>
 
 <h1>Registration Fee Payment</h1>
 <p id="status"></p>
-<span id="loading">
+
+<div style="display: flex;">
+  <div style="text-wrap: nowrap;">
+    <input id="name_input" type="text" placeholder="Name">
+    <i id="name_help" class="fas fa-question" onmouseenter="show('name_help_text', true)"
+      onmouseleave="show('name_help_text', false)"></i>
+  </div>
+  <span id="name_help_text" hidden="true">
+    Your name will be used to record you as registered for the workshop once the registration fee has been paid.
+  </span>
+</div>
+
+<br>
+
+<span id="loading" hidden="true">
   <i class="fas fa-spinner fa-spin"></i>
 </span>
 <button class="button" onclick="pay()">Proceed to QuikPAY Portal</button>
 
 <script>
-  loading(false);
   updateStatus();
   confirmUser();
 </script>
