@@ -73,19 +73,19 @@
 
   /* -----Table Styles----- */
   /* No space between cells */
-  table {
+  .data-table {
     border-collapse: collapse;
   }
 
   /* Table borders */
-  table,
-  td,
-  th {
+  .data-table,
+  table.data-table td,
+  table.data-table th {
     border: 2px solid black;
   }
 
   /* Column Headers */
-  th {
+  table.data-table th {
     font-weight: bold;
     background-color: rgb(180, 180, 180);
     border-top: 0;
@@ -93,12 +93,17 @@
   }
 
   /* Zebra Stripes */
-  table tr:nth-child(odd) {
+  table.data-table tr:nth-child(odd) {
     background-color: rgb(225, 225, 225);
   }
 
   .table-title {
     margin-bottom: 2px;
+  }
+
+  #contact_table {
+    background-color: transparent;
+    border: none;
   }
 </style>
 
@@ -146,49 +151,59 @@
 
 <h2 class="header">Agenda</h2>
 <p>November 6, 2023</p>
-<table id="table"></table>
+<table id="table" class="data-table"></table>
 <div class="flex-row">
   <div class="flex-row">
     <div class="flex-item">
       <h3 class="table-title">Assignments for Breakout Session 1</h3>
-      <table id="breakout1" style="width: 100%;"></table>
+      <table id="breakout1" class="data-table" style="width: 100%;"></table>
     </div>
     <div class="flex-item">
       <h3 class="table-title">Assignments for Breakout Session 2</h3>
-      <table id="breakout2" style="width: 100%"></table>
+      <table id="breakout2" class="data-table" style="width: 100%"></table>
     </div>
   </div>
   <div class="flex-row">
     <div class="flex-item">
       <h3 class="table-title">Assignments for Breakout Session 3</h3>
-      <table id="breakout3" style="width: 100%"></table>
+      <table id="breakout3" class="data-table" style="width: 100%"></table>
     </div>
     <div class="flex-item">
       <h3 class="table-title">Assignments for Breakout Session 4</h3>
-      <table id="breakout4" style="width: 100%"></table>
+      <table id="breakout4" class="data-table" style="width: 100%"></table>
     </div>
   </div>
 </div>
 
 <h2 class="header">Participants</h2>
-<table id="participants"></table>
+<table id="participants" class="data-table"></table>
 
 <h2 class="header">Contact</h2>
 
-{% for contact in site.data.pages.contacts %}
-<h4 style="display: inline">{{ contact.name }}</h4>
-<a href="{{ contact.website }}" class="link-btn">
-  <i class="fa fa-globe"></i>
-</a>
-<a href="mailto:{{ contact.email }}" class="link-btn">
-  <i class="fa fa-envelope"></i>
-</a>
-<a href="{{ contact.linkedin }}" class="link-btn">
-  <i class="fa-brands fa-linkedin"></i>
-</a>
-<br>
-{% endfor %}
-
+<table id="contact_table">
+  {% for contact in site.data.pages.contacts %}
+  <tr>
+    <td>
+      <h4 style="display: inline">{{ contact.name }}</h4>
+    </td>
+    <td>
+      <a href="{{ contact.website }}" class="link-btn">
+        <i class="fa fa-globe"></i>
+      </a>
+    </td>
+    <td>
+      <a href="mailto:{{ contact.email }}" class="link-btn">
+        <i class="fa fa-envelope"></i>
+      </a>
+    </td>
+    <td>
+      <a href="{{ contact.linkedin }}" class="link-btn">
+        <i class="fa-brands fa-linkedin"></i>
+      </a>
+    </td>
+  </tr>
+  {% endfor %}
+</table>
 
 
 <!-- Fill tables with data -->
