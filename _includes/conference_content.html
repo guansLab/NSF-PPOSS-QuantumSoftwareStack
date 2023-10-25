@@ -101,7 +101,14 @@
     margin-bottom: 2px;
   }
 
+  /* Table of contacts, table structure should be invisible */
   #contact_table {
+    border-collapse: collapse;
+  }
+
+  #contact_table,
+  table#contact_table td,
+  table#contact_table tr {
     background-color: transparent;
     border: none;
   }
