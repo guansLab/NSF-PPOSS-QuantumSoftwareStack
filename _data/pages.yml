@@ -6,3 +6,8 @@ pages:
   url: conference
 - title: Registration
   url: payment
+contacts:
+- name: Vipin Chaudhary
+  website: https://engineering.case.edu/about/school-directory/vipin-chaudhary
+  linkedin: https://www.linkedin.com/in/vipin-chaudhary-379529/
+  email: vipin.chaudhary@case.edu
