@@ -126,7 +126,7 @@
 
   /* Key above group session tables */
   #groups_key td {
-    padding: 1px 2px;
+    padding: 1px 3px;
   }
 </style>
 
@@ -189,8 +189,7 @@
     <td>Group Lead</td>
     <td><b>**</b></td>
     <td>Group Co-Lead</td>
-  </tr>
-  <tr>
+    <td>&emsp;</td>
     <td><b>†</b></td>
     <td>Group Scribe</td>
     <td><b>††</b></td>
@@ -198,9 +197,6 @@
   </tr>
 </table>
 <table id="groups" class="data-table"></table>
-
-<h2 class="header">Participants</h2>
-<table id="participants" class="data-table"></table>
 
 <h2 class="header">Contact</h2>
 
@@ -233,6 +229,5 @@
 <!-- Fill tables with data -->
 <script>
   fill_table('table', AGENDA, "A1:B", true);
-  fill_table('participants', AGENDA, "J2:K", true);
   fill_table('groups', AGENDA, "D:H", true);
 </script>
