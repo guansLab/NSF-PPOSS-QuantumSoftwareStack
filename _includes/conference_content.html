@@ -102,13 +102,13 @@
   }
 
   /* Table of contacts, table structure should be invisible */
-  #contact_table {
+  .invis-table {
     border-collapse: collapse;
   }
 
-  #contact_table,
-  table#contact_table td,
-  table#contact_table tr {
+  .invis-table,
+  .invis-table td,
+  .invis-table tr {
     width: fit-content;
     padding: 0 2px;
     background-color: transparent;
@@ -122,6 +122,11 @@
 
   table#groups td.col-0 {
     text-align: left;
+  }
+
+  /* Key above group session tables */
+  #groups_key td {
+    padding: 1px 2px;
   }
 </style>
 
@@ -178,6 +183,20 @@
 <p>November 6, 2023</p>
 <table id="table" class="data-table"></table>
 <h3 class="table-title">Breakout Session Groups</h3>
+<table id="groups_key" class="invis-table">
+  <tr>
+    <td><b>*</b></td>
+    <td>Group Lead</td>
+    <td><b>**</b></td>
+    <td>Group Co-Lead</td>
+  </tr>
+  <tr>
+    <td><b>†</b></td>
+    <td>Group Scribe</td>
+    <td><b>††</b></td>
+    <td>Group Co-Scribe</td>
+  </tr>
+</table>
 <table id="groups" class="data-table"></table>
 
 <h2 class="header">Participants</h2>
@@ -185,7 +204,7 @@
 
 <h2 class="header">Contact</h2>
 
-<table id="contact_table">
+<table class="invis-table">
   {% for contact in site.data.pages.contacts %}
   <tr>
     <td>
