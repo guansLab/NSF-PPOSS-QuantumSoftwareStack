@@ -42,7 +42,7 @@
 
       // Headers
       headers = data[0].map(txt => `<th>${txt}</th>`).join('');
-      body = data.slice(1).map((row, i) => `<tr>${row.map(txt => `<td>${txt}</td>`).join('')}</tr>`).join('');
+      body = data.slice(1).map((row, r) => `<tr class="row-${r}">${row.map((txt, c) => `<td class="col-${c}">${txt}</td>`).join('')}</tr>`).join('');
       table.innerHTML = `<tr>${headers}</tr>${body}`;
     });
   }
@@ -114,6 +114,15 @@
     background-color: transparent;
     border: none;
   }
+
+  /* Center group assignments */
+  table#groups td {
+    text-align: center;
+  }
+
+  table#groups td.col-0 {
+    text-align: left;
+  }
 </style>
 
 <h1>Workshop on Quantum Applications</h1>
@@ -168,28 +177,8 @@
 <h2 class="header">Agenda</h2>
 <p>November 6, 2023</p>
 <table id="table" class="data-table"></table>
-<div class="flex-row">
-  <div class="flex-row">
-    <div class="flex-item">
-      <h3 class="table-title">Breakout Session 1</h3>
-      <table id="breakout1" class="data-table" style="width: 100%;"></table>
-    </div>
-    <div class="flex-item">
-      <h3 class="table-title">Breakout Session 2</h3>
-      <table id="breakout2" class="data-table" style="width: 100%"></table>
-    </div>
-  </div>
-  <div class="flex-row">
-    <div class="flex-item">
-      <h3 class="table-title">Breakout Session 3</h3>
-      <table id="breakout3" class="data-table" style="width: 100%"></table>
-    </div>
-    <div class="flex-item">
-      <h3 class="table-title">Breakout Session 4</h3>
-      <table id="breakout4" class="data-table" style="width: 100%"></table>
-    </div>
-  </div>
-</div>
+<h3 class="table-title">Breakout Session Groups</h3>
+<table id="groups" class="data-table"></table>
 
 <h2 class="header">Participants</h2>
 <table id="participants" class="data-table"></table>
@@ -225,9 +214,6 @@
 <!-- Fill tables with data -->
 <script>
   fill_table('table', AGENDA, "A1:B", true);
-  fill_table('breakout1', AGENDA, "D2:F", true);
-  fill_table('breakout2', AGENDA, "H2:J", true);
-  fill_table('breakout3', AGENDA, "L2:N", true);
-  fill_table('breakout4', AGENDA, "S2:U", true);
-  fill_table('participants', AGENDA, "P2:Q", true);
+  fill_table('participants', AGENDA, "J2:K", true);
+  fill_table('groups', AGENDA, "D:H", true);
 </script>
