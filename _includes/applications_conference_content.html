@@ -1,0 +1,241 @@
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<script>
+    const AGENDA = "2PACX-1vS9ySFPe-5_7irGSfrTqZxABmXilN-CSUfUoSBsvNfuCjDesXMjY5Llj5NHEOTC6UZkNTWGrbdj4uws";
+
+    function get_data(sheet_id, range, unbounded_y) {
+        return fetch(`https://docs.google.com/spreadsheets/d/e/${sheet_id}/pub?output=csv&range=${range}`, {
+            method: 'GET'
+        }).then(res => res.text()).then(txt => {
+            var cols = txt.split('\r\n');
+            // Stop at first empty row
+            if (unbounded_y) {
+                var idx = cols.findIndex(v => v.replace(',', '') === '');
+                if (idx !== -1) {
+                    cols = cols.slice(0, idx);
+                }
+            }
+            return cols.map(
+                row => row
+                    .split('"')
+                    .reduce((arr, val, i) => arr.concat(i % 2 == 0 ? val.split(',') : [val]), [])
+                    .filter(val => val.length > 0)
+            );
+        });
+    }
+
+    function fill_table(id, sheet_id, data_range, unbounded_y) {
+        var table = document.getElementById(id);
+
+        if (table == undefined || table == null) {
+            return;
+        }
+
+        get_data(sheet_id, data_range, unbounded_y).then(data => {
+            if (data.length == 0) {
+                table.innerHTML = "";
+                return;
+            }
+
+            // Headers
+            headers = data[0].map(txt => `<th>${txt}</th>`).join('');
+            body = data.slice(1).map((row, r) => `<tr class="row-${r}">${row.map((txt, c) => `<td class="col-${c}">${txt}</td>`).join('')}</tr>`).join('');
+            table.innerHTML = `<tr>${headers}</tr>${body}`;
+        });
+    }
+</script>
+
+<style>
+    .link-btn {
+        color: black;
+        text-decoration: none;
+        padding: 2px;
+    }
+
+    .header {
+        margin-top: 10px;
+    }
+
+    /* Row */
+    .flex-row {
+        width: fit-content;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .flex-item {
+        margin-right: 5px;
+    }
+
+    /* -----Table Styles----- */
+    /* No space between cells */
+    .data-table {
+        border-collapse: collapse;
+    }
+
+    /* Table borders */
+    .data-table,
+    table.data-table td,
+    table.data-table th {
+        border: 2px solid black;
+    }
+
+    /* Column Headers */
+    table.data-table th {
+        font-weight: bold;
+        background-color: rgb(180, 180, 180);
+        border-top: 0;
+        text-align: center;
+    }
+
+    /* Zebra Stripes */
+    table.data-table tr:nth-child(odd) {
+        background-color: rgb(225, 225, 225);
+    }
+
+    .table-title {
+        margin-bottom: 2px;
+    }
+
+    /* Table of contacts, table structure should be invisible */
+    .invis-table {
+        border-collapse: collapse;
+    }
+
+    .invis-table,
+    .invis-table td,
+    .invis-table tr {
+        width: fit-content;
+        padding: 0 2px;
+        background-color: transparent;
+        border: none;
+    }
+
+    /* Center group assignments */
+    table#groups td {
+        text-align: center;
+    }
+
+    table#groups td.col-0 {
+        text-align: left;
+    }
+
+    /* Key above group session tables */
+    #groups_key td {
+        padding: 1px 3px;
+    }
+
+    #groups_key {
+        margin: 0;
+    }
+</style>
+
+<h1>Workshop on Quantum Applications</h1>
+
+<h2 class="header">Details</h2>
+
+<p>
+    This is the first of three invited workshops to inform the potential path towards the challenges in developing a
+    full software stack for a cluster of heterogeneous Noisy Intermediate-Scale Quantum (NISQ) machines.
+    This workshop focuses on quantum applications and their requirements for the full-stack.
+    The outcome will be a comprehensive report to the community that will span quantum applications,
+    software stack and hardware.
+</p>
+
+<h3>Location</h3>
+<p><a
+        href="https://www.marriott.com/en-us/hotels/clece-courtyard-cleveland-university-circle/overview/?scid=f2ae0541-1279-4f24-b197-a979c79310b0">Courtyard
+        by Mariott</a> next to Case Western Reserve University.
+    <br>
+    Room: Euclid
+</p>
+
+<h3>Housing Accommodations</h3>
+<p>
+    Courtyard by Mariott next to Case Western Reserve University. Rooms may be booked at <a
+        href="https://www.marriott.com/events/start.mi?id=1698239035272&key=GRP">Marriot - Quantum Workshop</a>
+</p>
+
+<p><b>Alternate Housing Options:</b></p>
+<p><a href="https://maps.app.goo.gl/CNkeB8V5gaS4VJEz7">Hilton</a>,
+    <a href="https://maps.app.goo.gl/4CwHbzAeiznAUg4v8">Intercontinental</a>,
+    <a href="https://maps.app.goo.gl/KybQYVgN2t2FgD8UA">Holiday Inn</a>
+</p>
+
+<h3>Registration</h3>
+<p>The workshop has concluded</p>
+
+<h3>Maps</h3>
+<p>Workshop Venue:</p>
+<iframe
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d357.6453339438518!2d-81.60535264696671!3d41.50797190893409!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8830fb899834b8d1%3A0xd79d3884acb4b374!2sCourtyard%20by%20Marriott%20Cleveland%20University%20Circle!5e0!3m2!1sen!2sus!4v1696612956580!5m2!1sen!2sus"
+    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+    referrerpolicy="no-referrer-when-downgrade"></iframe>
+<br>
+<br>
+<p>
+    Cleveland Clinic:
+    <br>
+    We have organized a bus for transportation to/from the workshop
+</p>
+<iframe
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3259.1345143116455!2d-81.57960722557132!3d41.490415402523034!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8830fb9a2ad7ef19%3A0x1e2aa74bab017bd0!2sCleveland%20Clinic%20Main%20Campus!5e0!3m2!1sen!2sus!4v1699205152204!5m2!1sen!2sus"
+    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+    referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+<h2 class="header">Agenda</h2>
+<p>November 6, 2023</p>
+<table id="table" class="data-table"></table>
+<h3 class="table-title">Breakout Session Groups</h3>
+<table id="groups_key" class="invis-table">
+    <tr>
+        <td><b>*</b></td>
+        <td>Group Lead</td>
+        <td><b>**</b></td>
+        <td>Group Co-Lead</td>
+        <td>&emsp;</td>
+        <td><b>†</b></td>
+        <td>Group Scribe</td>
+        <td><b>††</b></td>
+        <td>Group Co-Scribe</td>
+    </tr>
+</table>
+<table id="groups" class="data-table"></table>
+
+<h2 class="header">Contact</h2>
+
+<table class="invis-table">
+    {% for contact in site.data.pages.contacts %}
+    <tr>
+        <td>
+            <h4 style="display: inline">{{ contact.name }}</h4>
+        </td>
+        <td>
+            <a href="{{ contact.website }}" class="link-btn">
+                <i class="fa fa-globe"></i>
+            </a>
+        </td>
+        <td>
+            <a href="mailto:{{ contact.email }}" class="link-btn">
+                <i class="fa fa-envelope"></i>
+            </a>
+        </td>
+        <td>
+            <a href="{{ contact.linkedin }}" class="link-btn">
+                <i class="fa-brands fa-linkedin"></i>
+            </a>
+        </td>
+    </tr>
+    {% endfor %}
+</table>
+
+
+<!-- Fill tables with data -->
+<script>
+    fill_table('table', AGENDA, "A1:B", true);
+    fill_table('groups', AGENDA, "D:H", true);
+</script>

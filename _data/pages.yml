@@ -3,7 +3,9 @@ pages:
 - title: Home
   url:
 - title: Workshop on Quantum Applications
-  url: conference
+  url: applications-conference
+- title: Workshop on Quantum Computer Hardware
+  url: hardware-conference
 - title: Registration
   url: payment
 contacts:
